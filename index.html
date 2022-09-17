@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>32-Keyword-in-C</title>
+
+      <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script>
+
+    var keyworddata=[
+        ["Here is the list of 32 keywords in the C language:","",""],
+        ["Auto","auto data_type variable_name;","Auto is a storage class/ keyword in C Programming language which is used to declare a local variable.<br/> A local variable is a variable which is accessed only within a function, memory is allocated to the variable automatically on entering the function and is freed on leaving the function.<br/>GNU C has extended auto to allow forward declaration of nested functions as well.<br/>Key points regarding auto keyword:<br/>auto is used to define local variables (also by default)<br/>auto is used for forward declaration of nested functions <br/>auto can result in non-contiguous memory allocation"],
+        ["Break","break;","The break command allows you to terminate and exit a loop (that is, do , for , and while ) or switch command from any point other than the logical end. You can place a break command only in the body of a looping command or in the body of a switch command. The break keyword must be lowercase and cannot be abbreviated."],
+        ["Case","case:","You can have any number of case statements within a switch. Each case is followed by the value to be compared to and a colon. The constant-expression for a case must be the same data type as the variable in the switch, and it must be a constant or a literal."],
+        ["Char","char variable_name = value;","The abbreviation char is used as a reserved keyword in some programming languages, such as C, C++, C#, and Java. It is short for character, which is a data type that holds one character (letter, number, etc.) of data. For example, the value of a char variable could be any one-character value, such as 'A', '4', or '#'"],
+        ["Const","const data_type variable_name=value","The const keyword allows a programmer to tell the compiler that a particular variable should not be modified after the initial assignment in its declaration. If any code tries to assign a new value to that variable, the compiler will generate an error “Assignment to read-only variable not allowed” indicating that the assignment operation should not occur. This allows a programmer to prevent unwanted modifications to variables that for some reason should not be changed. Note that const variables must be initialized; otherwise there is no other way to assign them values."],
+        ["Continue","Continue;","The continue statement in C language is used to bring the program control to the beginning of the loop. The continue statement skips some lines of code inside the loop and continues with the next iteration. It is mainly used for a condition so that we can skip some code for a particular condition."],
+        ["Default","Update Soon......","Update Soon......"],
+        ["Double","double variable_name;","A double is a data type in C language that stores high-precision floating-point data or numbers in computer memory. It is called double data type because it can hold the double size of data compared to the float data type. A double has 8 bytes, which is equal to 64 bits in size. In double data type, the 1 bit for sign representation, 11 bits for the exponent and the remaining 52 bits used for the mantissa. The range of double is 1.7E-308 to 1.7E+308. Double data can be represents in real number (1, 10), decimals (0.1, 11.002) and minus (-1, -0.00002). It can hold approximately 15 to 16 digits before and after the decimal point.<br/> <br/>For example, 4.5672, 2.45354, -5.22234, 3.12345678901, 0.15197e-7 etc."],
+        ["Enum","enum enum_name{const1, const2, ....... };","Enumeration is a user defined datatype in C language. It is used to assign names to the integral constants which makes a program easy to read and maintain. The keyword “enum” is used to declare an enumeration."],
+        ["Extern","Extern data_type variable_name;","External variables are also known as global variables. These variables are defined outside the function. These variables are available globally throughout the function execution. The value of global variables can be modified by the functions. “extern” keyword is used to declare and define the external variables."],
+        ["Float","float variable_name = value;","Float is a datatype which is used to represent the floating point numbers. It is a 32-bit IEEE 754 single precision floating point number ( 1-bit for the sign, 8-bit for exponent, 23*-bit for the value. It has 6 decimal digits of precision."],
+        ["For","for(expression1; expression2; expression3)<br/> Statement to Repeat"," Just like if,While and do,For also controls only one statement at a time."],
+        ["Goto","goto label;<br/>..<br/>.<br/>label: statement;","The goto statement is a jump statement which is sometimes also referred to as unconditional jump statement. The goto statement can be used to jump from anywhere to anywhere within a function."],
+        ["If","if(condition)<br/>Statement;","C has the following conditional statements: Use if to specify a block of code to be executed, if a specified condition is true. Use else to specify a block of code to be executed, if the same condition is false. Use else if to specify a new condition to test, if the first condition is false."],
+        ["Int","Int variable_name = value;","In the C programming language, the keyword ‘int’ is used in a type declaration to give a variable an integer type. However, the fact that the type represents integers does not mean it can represent all integers. The size of an int variable is fixed and determined by the C implementation you use. The C Standard dictates that an int must have a range of at least -32768 to +32767. The C implementation can, and very often do, have a much larger range than this. The range of the int type on a particular C implementation can be obtained via the INT_MAX and INT_MIN variables defined in the header <limits.h>:"],
+        ["Long","Long variable_name;","long: The long data type is a 64-bit two's complement integer. The signed long has a minimum value of -263 and a maximum value of 263-1. In Java SE 8 and later, you can use the long data type to represent an unsigned 64-bit long, which has a minimum value of 0 and a maximum value of 264-1."],
+        ["Register","Register data_type variable_name=value","Registers are faster than memory to access, so the variables which are most frequently used in a C program can be put in registers using register keyword. The keyword register hints to compiler that a given variable can be put in a register."],
+        ["Return","return[expression];","The return statement returns the flow of the execution to the function from where it is called. This statement does not mandatorily need any conditional statements. As soon as the statement is executed, the flow of the program stops immediately and returns the control from where it was called. The return statement may or may not return anything for a void function, but for a non-void function, a return value must be returned."],
+        ["Short","Update Soon......","Update Soon......"],
+        ["Signed","Update Soon......","Update Soon......"],
+        ["Sizeof","Sizeof();","The sizeof operator is the most common operator in C. It is a compile-time unary operator and used to compute the size of its operand. It returns the size of a variable. It can be applied to any data type, float type, pointer type variables."],
+        ["Static","static variable_type variable_name <br/> And <br/>static function_type function_nameS()","The static keyword in C is a storage-class specifier. It has different meanings, depending on the context. Inside a function it makes the variable to retain its value between multiple function calls. Outside of a function it restrains the visibility of the function or variable to the current file (compilation unit)."],
+        ["Struct","struct structureName { dataType member1; dataType member2; ... };","Structures (also called structs) are a way to group several related variables into one place. Each variable in the structure is known as a member of the structure. Unlike an array, a structure can contain many different data types (int, float, char, etc.)."],
+        ["Switch","switch(expression){<br/>  case value1: <br/> //code to be executed; <br/> break;  //optional <br/> case value2:<br/> //code to be executed; <br/>break;  //optional  <br/>......<br/><br/>default: <br/>   code to be executed if all cases are not matched; }    ","The switch statement in C is an alternate to if-else-if ladder statement which allows us to execute multiple operations for the different possibles values of a single variable called switch variable. Here, We can define various statements in the multiple cases for the different values of a single variable."],
+        ["Typedef","typedef existing_name alias_name","The typedef is a keyword used in C programming to provide some meaningful names to the already existing variable in the C program. It behaves similarly as we define the alias for the commands. In short, we can say that this keyword is used to redefine the name of an already existing variable."],
+        ["Union","union [union tag] {<br/>member definition;<br/>member definition;<br/>...<br/>member definition;<br/>} [one or more union variables]; ","A union is a special data type available in C that allows to store different data types in the same memory location. You can define a union with many members, but only one member can contain a value at any given time."],
+        ["Unsigned","Update Soon......","Update Soon......"],
+        ["Void","Void Function_Name()","The literal meaning of void is empty or blank. In C, void can be used as a data type that represents no data. ..."],
+        ["Volatile","Update Soon......","Update Soon......"],
+        ["While","while(condition) {<br/> statement(s);<br/>}","A while loop in C programming repeatedly executes a target statement as long as a given condition is true."],
+        ["Do","Update Soon......","Update Soon......"],
+        ["Else","Update Soon......","Update Soon......"]
+  
+
+    ];
+    function keywordsinfo()
+    {
+        var option=""
+        var i;
+        for(i=0;i<keyworddata.length;i++)
+        option+='<option value="'+i+'">'+keyworddata[i][0]+'</option>';
+        document.getElementById("keyword").innerHTML=option;
+    }
+   
+    function Displayabout()
+    {
+        var keywordindex=parseInt(document.getElementById("keyword").value);
+        document.getElementById("Kname").innerHTML=keyworddata[keywordindex][0];
+        document.getElementById("about").innerHTML=keyworddata[keywordindex][2];
+        document.getElementById("syn").innerHTML=keyworddata[keywordindex][1];
+
+    }
+
+
+</script>
+
+</head>
+<body class="bg-danger style=" style="background-image:url(keyword.jpg); background-size: cover;" onload="keywordsinfo();">
+    <div class="container-fluid text-center bg-info text-dark">
+        <div class="row " >
+            <h1> All KEYWORDS IN C</h1>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 text-center" >
+                <select id="keyword" class="form-control form-control-lg" onchange="Displayabout();"></select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4 text-center" >
+                <h3 class="bg-primary">Keyword Name</h3>
+                <p id="Kname" class="h1 bg-danger"></p>
+            </div>
+            <div class="col-sm-4 text-center">
+                <h3 class="bg-primary">syntax</h3>
+                <h2 id="syn" class="bg-info"></h2>
+            </div>
+            <div class="col-sm-4 text-center" >
+                <h3 class="bg-primary">About Keyword</h3>
+                <p id="about" class="h4  bg-success"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
